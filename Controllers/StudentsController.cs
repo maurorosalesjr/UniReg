@@ -56,7 +56,7 @@ namespace UniReg.Controllers
     }
 
     [HttpPost]
-    public ActionResult Edit(Item student, int CourseId)
+    public ActionResult Edit(Student student, int CourseId)
     {
       if (CourseId != 0)
       {
