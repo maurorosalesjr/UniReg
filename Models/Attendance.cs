@@ -2,7 +2,7 @@ namespace UniReg.Models
 {
   public class Attendance
     {       
-        public int AttendaceId { get; set; }
+        public int AttendanceId { get; set; }
         public int StudentId { get; set; }
         public string StudentName { get; set; }
         public int CourseId { get; set; }

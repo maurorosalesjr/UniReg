@@ -1,4 +1,5 @@
 using System.Collections.Generic;
+using System;
 
 namespace UniReg.Models
 {
@@ -11,7 +12,7 @@ namespace UniReg.Models
 
         public int StudentId { get; set; }
         public string StudentName { get; set; }
-        public int EnrollmentDate { get; set; }
+        public DateTime EnrollmentDate { get; set; }
 
         public virtual ICollection<Attendance> JoinEntities { get;}
     }

@@ -1,12 +1,13 @@
 using System;
+using Microsoft.EntityFrameworkCore;
 
 namespace UniReg.Models
 {
     public class UniRegContext : DbContext
     {
-        // public DbSet<Category> Categories { get; set; }
-        // public DbSet<Item> Items { get; set; }
-        // public DbSet<CategoryItem> CategoryItem { get; set; }
+        public DbSet<Course> Courses { get; set; }
+        public DbSet<Student> Students { get; set; }
+        public DbSet<Attendance> Attendance { get; set; }
 
         public UniRegContext(DbContextOptions options) : base(options) { }
 

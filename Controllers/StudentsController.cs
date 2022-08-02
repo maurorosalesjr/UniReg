@@ -67,7 +67,7 @@ namespace UniReg.Controllers
       return RedirectToAction("Index");
     }
 
-    public ActionResult AddCategory(int id)
+    public ActionResult AddCourse(int id)
     {
         var thisStudent = _db.Students.FirstOrDefault(student => student.StudentId == id);
         ViewBag.CourseId = new SelectList(_db.Courses, "CourseId", "CourseName");
@@ -79,7 +79,7 @@ namespace UniReg.Controllers
     {
         if (CourseId != 0)
         {
-          _db.Attendance.Add(new Attendance() { CourseId = CourseId, StudentId = student.CourseId });
+          _db.Attendance.Add(new Attendance() { CourseId = CourseId, StudentId = student.StudentId });
           _db.SaveChanges();
         }
         return RedirectToAction("Index");
@@ -101,9 +101,9 @@ namespace UniReg.Controllers
     }
 
     [HttpPost]
-    public ActionResult DeleteCategory(int joinId)
+    public ActionResult DeleteCourse(int joinId)
     {
-        var joinEntry = _db.Attendance.FirstOrDefault(entry => entry.AttendaceId == joinId);
+        var joinEntry = _db.Attendance.FirstOrDefault(entry => entry.AttendanceId == joinId);
         _db.Attendance.Remove(joinEntry);
         _db.SaveChanges();
         return RedirectToAction("Index");

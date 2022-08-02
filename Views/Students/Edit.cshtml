@@ -11,13 +11,15 @@
 @using (Html.BeginForm())
 {
     @Html.HiddenFor(model => model.StudentId)
-
+    <br>
     @Html.LabelFor(model => model.StudentName)
     @Html.EditorFor(model => model.StudentName)
-
+    <br>
     @Html.Label("Select course")
     @Html.DropDownList("CourseId")
-
+    <br>
+    @Html.TextBoxFor(model => model.EnrollmentDate, "{0:d MMM yyyy}", new { @class="input-large", type = "datetime-local" })
+    <br>
     <input type="submit" value="Save" />
 }
 
