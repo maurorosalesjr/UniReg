@@ -27,6 +27,8 @@ else
     }
   }
   </ul>
+  <h4>Would you like to add another course?</h4>
+  <p>@Html.ActionLink("Add a course", "AddCourse", new { id = Model.StudentId })</p>
 }
 
 <p>@Html.ActionLink("Back to list", "Index")</p>
