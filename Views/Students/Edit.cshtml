@@ -4,7 +4,7 @@
 
 @model UniReg.Models.Student
 
-<h2>Edit</h2>
+<h1>Edit</h1>
 
 <h4>Edit this task: @Html.DisplayFor(model => model.StudentName)</h4>
 
@@ -19,10 +19,9 @@
     @Html.EditorFor(model => model.EnrollmentDate)
     <br>
     @Html.Label("Add a course")
+    <br>
     @Html.DropDownList("CourseId")
     <br>
-    
-    @Html.DisplayFor(model => model.EnrollmentDate)
     <input type="submit" value="Save" />
 }
 

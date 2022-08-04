@@ -1,1 +1,42 @@
-﻿
+﻿body {
+  background-color: lavenderblush;
+  margin-left: 8%;
+  margin-right: 8%;
+  margin-top: 7%;
+
+}
+
+
+h1 {
+  text-align: center;
+  font-family: 'Times New Roman';
+  color:cadetblue;
+  text-decoration: underline;
+  text-shadow: 2px;
+  border: 6px;
+  border-style: groove;
+  border-color: dodgerblue;
+}
+
+
+div#footer {
+	position:fixed;
+	bottom:0px;
+	left:0px;
+	width:100%;
+	color:#CCC;
+	background:#333;
+	padding:8px;
+}
+
+li {
+  margin-left: 5%;
+  margin-right: 10%;
+  font-family: Times;
+  font-weight: bold;
+}
+
+/* h1= page titles, h3= no () found, h4= task */
+
+
+

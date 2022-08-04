@@ -4,9 +4,9 @@
 
 @model UniReg.Models.Course;
 
-<h2>Course Details</h2>
+<h1>Course Details</h1>
 <hr />
-<h3>@Html.DisplayNameFor(model => model.CourseName): @Html.DisplayFor(model => model.CourseName)</h3>
+<h3>Course Name: @Html.DisplayFor(model => model.CourseName)</h3>
 
 @if(@Model.JoinEntities.Count == 0)
 {
