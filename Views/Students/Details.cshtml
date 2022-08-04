@@ -19,12 +19,12 @@ else
   <ul>
   @foreach(var join in Model.JoinEntities)
   {
-    <li>@join.Course.CourseName</li>
+    <li>@join.Course.CourseName
     @using (Html.BeginForm("DeleteCourse", "Students"))
     {
       @Html.Hidden("joinId", @join.AttendanceId)
-      <input type="submit" value="Delete"/>
-    }
+      <input type="submit" value="Delete" class="button-53" />
+    }</li>
   }
   </ul>
   <h4>Would you like to add another course?</h4>
